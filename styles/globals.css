@@ -1,26 +1,107 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+
+.LowText {
+    color: #46e441;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.LowBackground {
+    background-color: #233120;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
-* {
-  box-sizing: border-box;
+.LowBackground:hover {
+    background-color: #315229;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.MediumText {
+    color: #e4e141;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.MediumBackground {
+    background-color: #33331d;
+    display: flex;
+    justify-content: center;
+}
+
+.MediumBackground:hover {
+    background-color: #69692c;
+    display: flex;
+}
+
+.HighText {
+    color: #e44141;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.HighBackground {
+    background-color: #312020;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.HighBackground:hover {
+    background-color: #5a2828;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.CompletedText {
+    color: #e7e7e7;
+    font-weight: bold;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.CompletedBackground {
+    background-color: #161616;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.CompletedBackground:hover {    
+    background-color: #4e4e4e;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.toast-Complete {
+    --toastify-text-color-dark: #e2e1e1;
+    border-width: 1px;
+    border-color: #16ac1d;
+    --toastify-color-dark: #0a0a0a;
+}
+
+.toast-Update {
+    --toastify-text-color-dark: #e2e1e1;
+    border-width: 1px;
+    border-color: #d4ab23;
+    --toastify-color-dark: #0a0a0a;
+}
+
+.toast-Delete {
+    --toastify-text-color-dark: #e2e1e1;
+    border-width: 1px;
+    border-color: #e74c3c;
+    --toastify-color-dark: #0a0a0a;
 }
